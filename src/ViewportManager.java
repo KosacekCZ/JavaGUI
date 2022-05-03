@@ -24,7 +24,6 @@ public class ViewportManager {
     void init () {
         frame.setSize(900, 900);
         frame.setResizable(false);
-        frame.setVisible(true);
         frame.setLayout(new GridLayout(3, 3));
         frame.setDefaultCloseOperation(3);
         frame.setFont(new Font("Arial", Font.BOLD, 32));
@@ -37,6 +36,7 @@ public class ViewportManager {
             bt.addActionListener(this::actionPerformer);
             frame.add(bt);
         }
+        frame.setVisible(true);
     }
 
     void actionPerformer(ActionEvent e) {
